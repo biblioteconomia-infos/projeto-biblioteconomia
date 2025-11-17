@@ -17,7 +17,7 @@
 
     <nav class="navbar navbar-expand-lg fixed-top">
         <div class="container">
-            <a class="navbar-brand" href="#">Biblio<span, 💜</a>
+            <a class="navbar-brand" href="#">Biblio<span style="color: #fff;">Love</span> 💜</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -107,10 +107,12 @@
 
     <section id="graduacao" class="py-5">
         <div class="container">
-            <h2 class="titulo-secao text-center mb-4">Graduação (Bacharelado)</h2>
-            <p class="text-center mb-5">Principais instituições públicas e privadas que oferecem o curso:</p>
+            <h2 class="titulo-secao text-center mb-4">Graduação (Instituições Públicas)</h2>
+            <p class="text-center mb-5">Confira as principais universidades federais e estaduais:</p>
             
-            <div class="table-responsive">
+            <input class="form-control mb-4" id="myInput" type="text" placeholder="🔎 Digite o nome da universidade ou estado...">
+
+            <div class="table-responsive" style="max-height: 600px; overflow-y: auto;">
                 <table class="table table-hover table-custom align-middle">
                     <thead>
                         <tr>
@@ -119,111 +121,37 @@
                             <th>Ações</th>
                         </tr>
                     </thead>
-                    <tbody>
-                        <tr>
-                            <td>USP (Universidade de São Paulo)</td>
-                            <td>São Paulo - SP</td>
-                            <td>
-                                <a href="https://www.fflch.usp.br/" target="_blank" class="btn btn-sm btn-outline-purple">Visitar Site</a>
-                                <button class="btn btn-sm btn-purple" data-bs-toggle="modal" data-bs-target="#modalUSP">Grade Detalhada</button>
-                            </td>
-                        </tr>
-                         <tr>
-                            <td>UFSC (Univ. Federal de Santa Catarina)</td>
-                            <td>Florianópolis - SC</td>
-                            <td>
-                                <a href="https://cin.ufsc.br/" target="_blank" class="btn btn-sm btn-outline-purple">Visitar Site</a>
-                                <button class="btn btn-sm btn-purple" data-bs-toggle="modal" data-bs-target="#modalUFSC">Grade Detalhada</button>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>UFRGS (Univ. Federal do Rio Grande do Sul)</td>
-                            <td>Porto Alegre - RS</td>
-                            <td>
-                                <a href="https://www.ufrgs.br/biblio/" target="_blank" class="btn btn-sm btn-outline-purple">Visitar Site</a>
-                                <button class="btn btn-sm btn-purple" data-bs-toggle="modal" data-bs-target="#modalUFRGS">Grade Detalhada</button>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>UFRJ (Univ. Federal do Rio de Janeiro)</td>
-                            <td>Rio de Janeiro - RJ</td>
-                            <td>
-                                <a href="https://www.facc.ufrj.br/" target="_blank" class="btn btn-sm btn-outline-purple">Visitar Site</a>
-                                <button class="btn btn-sm btn-purple" data-bs-toggle="modal" data-bs-target="#modalUFRJ">Grade Detalhada</button>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>FURG (Univ. Federal do Rio Grande)</td>
-                            <td>Rio Grande - RS</td>
-                            <td>
-                                <a href="https://cib.furg.br/" target="_blank" class="btn btn-sm btn-outline-purple">Visitar Site</a>
-                                <button class="btn btn-sm btn-purple" data-bs-toggle="modal" data-bs-target="#modalFURG">Grade Detalhada</button>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>UFAL (Univ. Federal de Alagoas)</td>
-                            <td>Maceió - AL</td>
-                            <td>
-                                <a href="https://ichca.ufal.br/graduacao/biblioteconomia" target="_blank" class="btn btn-sm btn-outline-purple">Visitar Site</a>
-                                <button class="btn btn-sm btn-purple" data-bs-toggle="modal" data-bs-target="#modalUFAL">Grade</button>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>PUC-Campinas</td>
-                            <td>Campinas - SP</td>
-                            <td>
-                                <a href="https://www.puc-campinas.edu.br/" target="_blank" class="btn btn-sm btn-outline-purple">Visitar Site</a>
-                                <button class="btn btn-sm btn-purple" data-bs-toggle="modal" data-bs-target="#modalPUC">Grade</button>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>UFSCar (Univ. Federal de São Carlos)</td>
-                            <td>São Carlos - SP</td>
-                            <td>
-                                <a href="https://www.bci.ufscar.br/" target="_blank" class="btn btn-sm btn-outline-purple">Visitar Site</a>
-                                <button class="btn btn-sm btn-purple" data-bs-toggle="modal" data-bs-target="#modalUFSCar">Grade</button>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>UNIRIO (Univ. Federal do Estado do RJ)</td>
-                            <td>Rio de Janeiro - RJ</td>
-                            <td>
-                                <a href="http://www.unirio.br/cch/eb" target="_blank" class="btn btn-sm btn-outline-purple">Visitar Site</a>
-                                <button class="btn btn-sm btn-purple" data-bs-toggle="modal" data-bs-target="#modalUNIRIO">Grade</button>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>UFG (Univ. Federal de Goiás)</td>
-                            <td>Goiânia - GO</td>
-                            <td>
-                                <a href="https://fic.ufg.br/" target="_blank" class="btn btn-sm btn-outline-purple">Visitar Site</a>
-                                <button class="btn btn-sm btn-purple" data-bs-toggle="modal" data-bs-target="#modalUFG">Grade</button>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>UFC (Univ. Federal do Ceará)</td>
-                            <td>Fortaleza - CE</td>
-                            <td>
-                                <a href="https://biblioteconomia.ufc.br/" target="_blank" class="btn btn-sm btn-outline-purple">Visitar Site</a>
-                                <button class="btn btn-sm btn-purple" data-bs-toggle="modal" data-bs-target="#modalUFC">Grade</button>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>UFPB (Univ. Federal da Paraíba)</td>
-                            <td>João Pessoa - PB</td>
-                            <td>
-                                <a href="https://www.ccsa.ufpb.br/dci" target="_blank" class="btn btn-sm btn-outline-purple">Visitar Site</a>
-                                <button class="btn btn-sm btn-purple" data-bs-toggle="modal" data-bs-target="#modalUFPB">Grade</button>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>UFES (Univ. Federal do Espírito Santo)</td>
-                            <td>Vitória - ES</td>
-                            <td>
-                                <a href="https://biblioteconomia.ufes.br/" target="_blank" class="btn btn-sm btn-outline-purple">Visitar Site</a>
-                                <button class="btn btn-sm btn-purple" data-bs-toggle="modal" data-bs-target="#modalUFES">Grade</button>
-                            </td>
-                        </tr>
+                    <tbody id="universityTable">
+                        <tr><td>USP (Universidade de São Paulo)</td><td>São Paulo - SP</td><td><button class="btn btn-sm btn-purple" data-bs-toggle="modal" data-bs-target="#modalUSP">Ver Detalhes</button></td></tr>
+                        <tr><td>UFRJ (Univ. Federal do Rio de Janeiro)</td><td>Rio de Janeiro - RJ</td><td><button class="btn btn-sm btn-purple" data-bs-toggle="modal" data-bs-target="#modalUFRJ">Ver Detalhes</button></td></tr>
+                        <tr><td>UNIRIO (Univ. Federal do Estado do RJ)</td><td>Rio de Janeiro - RJ</td><td><button class="btn btn-sm btn-purple" data-bs-toggle="modal" data-bs-target="#modalUNIRIO">Ver Detalhes</button></td></tr>
+                        <tr><td>UFF (Univ. Federal Fluminense)</td><td>Niterói - RJ</td><td><button class="btn btn-sm btn-purple" data-bs-toggle="modal" data-bs-target="#modalUFF">Ver Detalhes</button></td></tr>
+                        <tr><td>UFSCar (Univ. Federal de São Carlos)</td><td>São Carlos - SP</td><td><button class="btn btn-sm btn-purple" data-bs-toggle="modal" data-bs-target="#modalUFSCar">Ver Detalhes</button></td></tr>
+                        <tr><td>UFMG (Univ. Federal de Minas Gerais)</td><td>Belo Horizonte - MG</td><td><button class="btn btn-sm btn-purple" data-bs-toggle="modal" data-bs-target="#modalUFMG">Ver Detalhes</button></td></tr>
+                        <tr><td>UFES (Univ. Federal do Espírito Santo)</td><td>Vitória - ES</td><td><button class="btn btn-sm btn-purple" data-bs-toggle="modal" data-bs-target="#modalUFES">Ver Detalhes</button></td></tr>
+
+                        <tr><td>UFRGS (Univ. Federal do Rio Grande do Sul)</td><td>Porto Alegre - RS</td><td><button class="btn btn-sm btn-purple" data-bs-toggle="modal" data-bs-target="#modalUFRGS">Ver Detalhes</button></td></tr>
+                        <tr><td>FURG (Univ. Federal do Rio Grande)</td><td>Rio Grande - RS</td><td><button class="btn btn-sm btn-purple" data-bs-toggle="modal" data-bs-target="#modalFURG">Ver Detalhes</button></td></tr>
+                        <tr><td>UFSC (Univ. Federal de Santa Catarina)</td><td>Florianópolis - SC</td><td><button class="btn btn-sm btn-purple" data-bs-toggle="modal" data-bs-target="#modalUFSC">Ver Detalhes</button></td></tr>
+                        <tr><td>UDESC (Univ. do Estado de Santa Catarina)</td><td>Florianópolis - SC</td><td><button class="btn btn-sm btn-purple" data-bs-toggle="modal" data-bs-target="#modalUDESC">Ver Detalhes</button></td></tr>
+
+                        <tr><td>UnB (Universidade de Brasília)</td><td>Brasília - DF</td><td><button class="btn btn-sm btn-purple" data-bs-toggle="modal" data-bs-target="#modalUnB">Ver Detalhes</button></td></tr>
+                        <tr><td>UFG (Univ. Federal de Goiás)</td><td>Goiânia - GO</td><td><button class="btn btn-sm btn-purple" data-bs-toggle="modal" data-bs-target="#modalUFG">Ver Detalhes</button></td></tr>
+                        <tr><td>UFR (Univ. Federal de Rondonópolis)</td><td>Rondonópolis - MT</td><td><button class="btn btn-sm btn-purple" data-bs-toggle="modal" data-bs-target="#modalUFR">Ver Detalhes</button></td></tr>
+
+                        <tr><td>UFBA (Univ. Federal da Bahia)</td><td>Salvador - BA</td><td><button class="btn btn-sm btn-purple" data-bs-toggle="modal" data-bs-target="#modalUFBA">Ver Detalhes</button></td></tr>
+                        <tr><td>UFPE (Univ. Federal de Pernambuco)</td><td>Recife - PE</td><td><button class="btn btn-sm btn-purple" data-bs-toggle="modal" data-bs-target="#modalUFPE">Ver Detalhes</button></td></tr>
+                        <tr><td>UFC (Univ. Federal do Ceará)</td><td>Fortaleza - CE</td><td><button class="btn btn-sm btn-purple" data-bs-toggle="modal" data-bs-target="#modalUFC">Ver Detalhes</button></td></tr>
+                        <tr><td>UFCA (Univ. Federal do Cariri)</td><td>Juazeiro do Norte - CE</td><td><button class="btn btn-sm btn-purple" data-bs-toggle="modal" data-bs-target="#modalUFCA">Ver Detalhes</button></td></tr>
+                        <tr><td>UFPB (Univ. Federal da Paraíba)</td><td>João Pessoa - PB</td><td><button class="btn btn-sm btn-purple" data-bs-toggle="modal" data-bs-target="#modalUFPB">Ver Detalhes</button></td></tr>
+                        <tr><td>UFRN (Univ. Federal do Rio Grande do Norte)</td><td>Natal - RN</td><td><button class="btn btn-sm btn-purple" data-bs-toggle="modal" data-bs-target="#modalUFRN">Ver Detalhes</button></td></tr>
+                        <tr><td>UFAL (Univ. Federal de Alagoas)</td><td>Maceió - AL</td><td><button class="btn btn-sm btn-purple" data-bs-toggle="modal" data-bs-target="#modalUFAL">Ver Detalhes</button></td></tr>
+                        <tr><td>UFS (Univ. Federal de Sergipe)</td><td>São Cristóvão - SE</td><td><button class="btn btn-sm btn-purple" data-bs-toggle="modal" data-bs-target="#modalUFS">Ver Detalhes</button></td></tr>
+                        <tr><td>UESPI (Univ. Estadual do Piauí)</td><td>Teresina - PI</td><td><button class="btn btn-sm btn-purple" data-bs-toggle="modal" data-bs-target="#modalUESPI">Ver Detalhes</button></td></tr>
+
+                        <tr><td>UFAM (Univ. Federal do Amazonas)</td><td>Manaus - AM</td><td><button class="btn btn-sm btn-purple" data-bs-toggle="modal" data-bs-target="#modalUFAM">Ver Detalhes</button></td></tr>
+                        <tr><td>UFPA (Univ. Federal do Pará)</td><td>Belém - PA</td><td><button class="btn btn-sm btn-purple" data-bs-toggle="modal" data-bs-target="#modalUFPA">Ver Detalhes</button></td></tr>
+                        <tr><td>UNIR (Univ. Federal de Rondônia)</td><td>Porto Velho - RO</td><td><button class="btn btn-sm btn-purple" data-bs-toggle="modal" data-bs-target="#modalUNIR">Ver Detalhes</button></td></tr>
                     </tbody>
                 </table>
             </div>
@@ -312,167 +240,71 @@
         <p class="mb-0">&copy; 2025 Projeto Biblioteconomia. Feito com 💜.</p>
     </footer>
 
-    <div class="modal fade" id="modalUSP" tabindex="-1" aria-hidden="true">
-        <div class="modal-dialog modal-xl modal-dialog-scrollable">
-            <div class="modal-content">
-                <div class="modal-header" style="background-color: #8E24AA; color: white;">
-                    <h5 class="modal-title">Grade Curricular - USP (ECA)</h5>
-                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body bg-lilac">
-                    <div class="card card-custom mb-3 p-3 border-purple">
-                        <div class="row">
-                            <div class="col-md-6">
-                                <h6 class="text-purple fw-bold">Resumo do Curso</h6>
-                                <ul class="small mb-0">
-                                    <li><strong>Duração Ideal:</strong> 8 semestres (4 anos)</li>
-                                    <li><strong>Carga Horária Total:</strong> ~2970 horas</li>
-                                    <li><strong>Estágio Obrigatório:</strong> 240 horas</li>
-                                </ul>
-                            </div>
-                            <div class="col-md-6">
-                                <h6 class="text-purple fw-bold">✨ Diferencial: Biblioeducação</h6>
-                                <p class="small mb-0 text-muted">A USP oferece um certificado especial em <strong>Biblioeducação</strong> para quem quiser atuar em escolas e projetos educativos.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="accordion" id="accordionUSP">
-                        <div class="accordion-item"><h2 class="accordion-header"><button class="accordion-button fw-bold text-purple" type="button" data-bs-toggle="collapse" data-bs-target="#usp1">1º Semestre</button></h2><div id="usp1" class="accordion-collapse collapse show" data-bs-parent="#accordionUSP"><div class="accordion-body p-0"><table class="table table-striped table-sm mb-0"><tbody><tr><td>CBD0185</td><td>Biblioteca, Informação e Sociedade</td></tr><tr><td>CBD0223</td><td>Fundamentos em Biblio. e CI</td></tr><tr><td>CBD0294</td><td>Introdução à Análise Documentária</td></tr><tr><td>CBD0295</td><td>Informação, Conhecimento e Cultura</td></tr></tbody></table></div></div></div>
-                        
-                        <div class="accordion-item"><h2 class="accordion-header"><button class="accordion-button collapsed fw-bold text-purple" type="button" data-bs-toggle="collapse" data-bs-target="#usp2">2º Semestre</button></h2><div id="usp2" class="accordion-collapse collapse" data-bs-parent="#accordionUSP"><div class="accordion-body p-0"><table class="table table-striped table-sm mb-0"><tbody><tr><td>CBD0272</td><td>Redes Eletrônicas e Ambientes</td></tr><tr><td>CBD0275</td><td>Intro. Pesquisa em CI</td></tr><tr><td>CBD0288</td><td>Intro. Adm. Serviços de Informação</td></tr><tr><td>CBD0312</td><td>Biblioeducação: Elementos Conceituais</td></tr></tbody></table></div></div></div>
+    <div class="modal fade" id="modalUSP" tabindex="-1" aria-hidden="true"><div class="modal-dialog modal-lg"><div class="modal-content"><div class="modal-header bg-lilac"><h5 class="modal-title fw-bold">USP - São Paulo</h5><button type="button" class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body"><p><strong>Criada em:</strong> 1966 (ECA)</p><p>O curso tem forte diálogo com a comunicação. Foca no planejamento e administração de bibliotecas e centros de documentação. Destaque para a formação de docentes e pesquisadores.</p><div class="alert alert-info">Possui Certificado em <strong>Biblioeducação</strong>.</div></div></div></div></div>
 
-                        <div class="accordion-item"><h2 class="accordion-header"><button class="accordion-button collapsed fw-bold text-purple" type="button" data-bs-toggle="collapse" data-bs-target="#usp3">3º Semestre</button></h2><div id="usp3" class="accordion-collapse collapse" data-bs-parent="#accordionUSP"><div class="accordion-body p-0"><table class="table table-striped table-sm mb-0"><tbody><tr><td>CBD0215</td><td>Catalogação Descritiva I</td></tr><tr><td>CBD0260</td><td>Elementos de Lógica</td></tr><tr><td>CBD0322</td><td>Sist. Org. Conhecimento</td></tr></tbody></table></div></div></div>
+    <div class="modal fade" id="modalUFRJ" tabindex="-1" aria-hidden="true"><div class="modal-dialog modal-lg"><div class="modal-content"><div class="modal-header bg-lilac"><h5 class="modal-title fw-bold">UFRJ - Rio de Janeiro</h5><button type="button" class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body"><p><strong>Reformulado em:</strong> 2020</p><p>Perfil multi e interdisciplinar. Prepara para atuar em editoras, agências, TV e consultorias. Grade moderna focada em Gestão, Tecnologia e Humanidades.</p></div></div></div></div>
 
-                        <div class="accordion-item"><h2 class="accordion-header"><button class="accordion-button collapsed fw-bold text-purple" type="button" data-bs-toggle="collapse" data-bs-target="#usp4">4º Semestre</button></h2><div id="usp4" class="accordion-collapse collapse" data-bs-parent="#accordionUSP"><div class="accordion-body p-0"><table class="table table-striped table-sm mb-0"><tbody><tr><td>CBD0216</td><td>Catalogação Descritiva II</td></tr><tr><td>CBD0262</td><td>Teoria da Ação Cultural</td></tr><tr><td>CBD0318</td><td>Métodos Digitais</td></tr><tr><td>CBD0324</td><td>Recursos Informacionais</td></tr></tbody></table></div></div></div>
+    <div class="modal fade" id="modalUNIRIO" tabindex="-1" aria-hidden="true"><div class="modal-dialog modal-lg"><div class="modal-content"><div class="modal-header bg-lilac"><h5 class="modal-title fw-bold">UNIRIO - O Berço</h5><button type="button" class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body"><p><strong>Histórico:</strong> Herdeira do primeiro curso do Brasil (Biblioteca Nacional, 1911).</p><p>Estrutura pedagógica em Eixos (Memória, Ciência e Gestão). Referência em História do Livro e Bibliotecas.</p></div></div></div></div>
 
-                        <div class="accordion-item"><h2 class="accordion-header"><button class="accordion-button collapsed fw-bold text-purple" type="button" data-bs-toggle="collapse" data-bs-target="#usp5">5º Semestre</button></h2><div id="usp5" class="accordion-collapse collapse" data-bs-parent="#accordionUSP"><div class="accordion-body p-0"><table class="table table-striped table-sm mb-0"><tbody><tr><td>CBD0229</td><td>Documentação Digital</td></tr><tr><td>CBD0264</td><td>Info, Ciência e Tecnologia</td></tr><tr><td>CBD0268</td><td>Doc. Audiovisual</td></tr><tr><td class="table-warning">CBD0273</td><td><strong>Estágio Supervisionado</strong></td></tr></tbody></table></div></div></div>
-                        
-                        <div class="accordion-item"><h2 class="accordion-header"><button class="accordion-button collapsed fw-bold text-purple" type="button" data-bs-toggle="collapse" data-bs-target="#uspOpt">➕ Optativas</button></h2><div id="uspOpt" class="accordion-collapse collapse" data-bs-parent="#accordionUSP"><div class="accordion-body p-3 small">Humanidades Digitais, IA aplicada à CI, Museologia, Bibliotecas Escolares, etc.</div></div></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+    <div class="modal fade" id="modalUFF" tabindex="-1" aria-hidden="true"><div class="modal-dialog modal-lg"><div class="modal-content"><div class="modal-header bg-lilac"><h5 class="modal-title fw-bold">UFF - Niterói</h5><button type="button" class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body"><p>Foca na inovação e soluções para demandas de informação. Forte em tratamento da informação, tecnologias e pesquisa sobre comportamento do usuário.</p></div></div></div></div>
 
-    <div class="modal fade" id="modalUFSC" tabindex="-1" aria-hidden="true">
-        <div class="modal-dialog modal-xl modal-dialog-scrollable">
-            <div class="modal-content">
-                <div class="modal-header" style="background-color: #8E24AA; color: white;">
-                    <h5 class="modal-title">Grade Curricular - UFSC</h5>
-                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body bg-lilac">
-                    <div class="card card-custom mb-3 p-3 border-purple">
-                        <h6 class="text-purple fw-bold">⭐ Destaques: Tecnologia & Social</h6>
-                        <p class="small mb-0">Inclui disciplinas modernas como <strong>LGPD (Proteção de Dados)</strong>, <strong>Biblioterapia</strong> e <strong>Acessibilidade</strong>.</p>
-                    </div>
-                    <div class="accordion" id="accordionUFSC">
-                         <div class="alert alert-light border-purple text-center small mb-2"><em>* Fases 1 e 2: Fundamentos básicos. Abaixo, grade específica.</em></div>
-                         
-                         <div class="accordion-item"><h2 class="accordion-header"><button class="accordion-button fw-bold text-purple" type="button" data-bs-toggle="collapse" data-bs-target="#ufsc3">3ª Fase</button></h2><div id="ufsc3" class="accordion-collapse collapse show" data-bs-parent="#accordionUFSC"><div class="accordion-body p-0"><table class="table table-striped table-sm mb-0"><tbody><tr><td>CIN7304</td><td>Bancos de Dados</td></tr><tr class="table-warning"><td>CIN7936</td><td><strong>Proteção de Dados (LGPD)</strong></td></tr><tr><td>CIN7309</td><td>Gestão de Processos</td></tr><tr><td>CIN7301</td><td>Rep. Temática</td></tr><tr><td>CIN7302</td><td>Rep. Descritiva</td></tr></tbody></table></div></div></div>
+    <div class="modal fade" id="modalUFSCar" tabindex="-1" aria-hidden="true"><div class="modal-dialog modal-lg"><div class="modal-content"><div class="modal-header bg-lilac"><h5 class="modal-title fw-bold">UFSCar - São Carlos</h5><button type="button" class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body"><p><strong>Destaque:</strong> Sistema de Ênfases (Memória, Ciência, Competitividade ou Tecnologia).</p><p>O curso visa formar pesquisadores e profissionais reflexivos, com forte base em extensão e ética.</p></div></div></div></div>
 
-                         <div class="accordion-item"><h2 class="accordion-header"><button class="accordion-button collapsed fw-bold text-purple" type="button" data-bs-toggle="collapse" data-bs-target="#ufsc4">4ª Fase</button></h2><div id="ufsc4" class="accordion-collapse collapse" data-bs-parent="#accordionUFSC"><div class="accordion-body p-0"><table class="table table-striped table-sm mb-0"><tbody><tr><td>CIN7401</td><td>Estudos Métricos</td></tr><tr><td>CIN7406</td><td>Preservação Digital</td></tr><tr><td>CIN7403</td><td>Acessibilidade e Inclusão</td></tr><tr><td>CIN7412</td><td>Marketing</td></tr></tbody></table></div></div></div>
+    <div class="modal fade" id="modalUFMG" tabindex="-1" aria-hidden="true"><div class="modal-dialog modal-lg"><div class="modal-content"><div class="modal-header bg-lilac"><h5 class="modal-title fw-bold">UFMG - Minas Gerais</h5><button type="button" class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body"><p>Atuação crítica na organização e gestão da informação (física e virtual). A grade analisa o conhecimento sob aspectos culturais, econômicos e políticos.</p></div></div></div></div>
 
-                         <div class="accordion-item"><h2 class="accordion-header"><button class="accordion-button collapsed fw-bold text-purple" type="button" data-bs-toggle="collapse" data-bs-target="#ufsc5">5ª e 6ª Fases</button></h2><div id="ufsc5" class="accordion-collapse collapse" data-bs-parent="#accordionUFSC"><div class="accordion-body p-0"><table class="table table-striped table-sm mb-0"><tbody><tr><td>CIN7507</td><td>Sistemas de Classificação</td></tr><tr><td>CIN7509</td><td>Estudos de Usuários</td></tr><tr><td>CIN7606</td><td>Org. de Bibliotecas</td></tr><tr><td>CIN7608</td><td>Desenv. de Coleções</td></tr><tr><td>CIN7607</td><td>Indexação</td></tr></tbody></table></div></div></div>
+    <div class="modal fade" id="modalUFES" tabindex="-1" aria-hidden="true"><div class="modal-dialog modal-lg"><div class="modal-content"><div class="modal-header bg-lilac"><h5 class="modal-title fw-bold">UFES - Espírito Santo</h5><button type="button" class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body"><p><strong>Turno:</strong> Noturno</p><p>Criado para suprir a demanda local, hoje é referência. Grade com forte viés tecnológico (Ciência de Dados) e social (Ação Cultural).</p></div></div></div></div>
 
-                         <div class="accordion-item"><h2 class="accordion-header"><button class="accordion-button collapsed fw-bold text-purple" type="button" data-bs-toggle="collapse" data-bs-target="#ufsc7">7ª e 8ª Fases (Final)</button></h2><div id="ufsc7" class="accordion-collapse collapse" data-bs-parent="#accordionUFSC"><div class="accordion-body p-0"><table class="table table-striped table-sm mb-0"><tbody><tr><td>CIN7703</td><td>Referência</td></tr><tr><td>CIN7706</td><td>Multimeios</td></tr><tr class="table-success"><td>CIN7802</td><td><strong>Estágio Supervisionado</strong></td></tr><tr><td>CIN7801</td><td>TCC</td></tr></tbody></table></div></div></div>
-                         
-                         <div class="accordion-item"><h2 class="accordion-header"><button class="accordion-button collapsed fw-bold bg-light text-dark" type="button" data-bs-toggle="collapse" data-bs-target="#ufscOpt">➕ Optativas Interessantes</button></h2><div id="ufscOpt" class="accordion-collapse collapse" data-bs-parent="#accordionUFSC"><div class="accordion-body p-3 small">Biblioterapia, Bib. Digital, Direito na Inovação, Libras, Cultura Popular.</div></div></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+    <div class="modal fade" id="modalUFRGS" tabindex="-1" aria-hidden="true"><div class="modal-dialog modal-lg"><div class="modal-content"><div class="modal-header bg-lilac"><h5 class="modal-title fw-bold">UFRGS - Rio Grande do Sul</h5><button type="button" class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body"><p><strong>Criado em:</strong> 1947 (Pioneiro no Sul)</p><p>Alinhado com o Mercosul. Baseado em 4 eixos: Fundamentos, Organização, Recursos e Gestão. Excelência em pesquisa acadêmica.</p></div></div></div></div>
 
-    <div class="modal fade" id="modalUFRGS" tabindex="-1" aria-hidden="true">
-        <div class="modal-dialog modal-xl modal-dialog-scrollable">
-            <div class="modal-content">
-                <div class="modal-header" style="background-color: #8E24AA; color: white;">
-                    <h5 class="modal-title">Grade - UFRGS</h5>
-                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body bg-lilac">
-                    <div class="accordion" id="accordionUFRGS">
-                        <div class="accordion-item"><h2 class="accordion-header"><button class="accordion-button fw-bold text-purple" type="button" data-bs-toggle="collapse" data-bs-target="#ufrgs1">Etapa 1 e 2</button></h2><div id="ufrgs1" class="accordion-collapse collapse show" data-bs-parent="#accordionUFRGS"><div class="accordion-body p-0"><table class="table table-striped table-sm mb-0"><tbody><tr><td>Fontes Gerais de Info.</td></tr><tr><td>História dos Registros</td></tr><tr><td>Intro. Biblioteconomia</td></tr><tr><td>Intro. Sociologia</td></tr><tr><td>Intro. Adm. Bibliotecas</td></tr><tr><td>Intro. Org. Informação</td></tr></tbody></table></div></div></div>
-                        
-                        <div class="accordion-item"><h2 class="accordion-header"><button class="accordion-button collapsed fw-bold text-purple" type="button" data-bs-toggle="collapse" data-bs-target="#ufrgs3">Etapa 3 e 4</button></h2><div id="ufrgs3" class="accordion-collapse collapse" data-bs-parent="#accordionUFRGS"><div class="accordion-body p-0"><table class="table table-striped table-sm mb-0"><tbody><tr><td>Competência em Info.</td></tr><tr><td>Documentos Digitais</td></tr><tr><td>Rep. Descritiva I e II</td></tr><tr><td>Sist. Classificação I e II</td></tr><tr><td>Estatística Básica</td></tr><tr><td>Estudo de Usuários</td></tr></tbody></table></div></div></div>
+    <div class="modal fade" id="modalFURG" tabindex="-1" aria-hidden="true"><div class="modal-dialog modal-lg"><div class="modal-content"><div class="modal-header bg-lilac"><h5 class="modal-title fw-bold">FURG - Rio Grande</h5><button type="button" class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body"><p>Foco na visão crítica e compromisso ético. Prioriza o livre acesso ao conhecimento. Forte viés em Extensão Bibliotecária e Línguas.</p></div></div></div></div>
 
-                        <div class="accordion-item"><h2 class="accordion-header"><button class="accordion-button collapsed fw-bold text-purple" type="button" data-bs-toggle="collapse" data-bs-target="#ufrgs5">Etapa 5 e 6</button></h2><div id="ufrgs5" class="accordion-collapse collapse" data-bs-parent="#accordionUFRGS"><div class="accordion-body p-0"><table class="table table-striped table-sm mb-0"><tbody><tr><td>Fundamentos da CI</td></tr><tr><td>Gestão de Coleções</td></tr><tr><td>Info. Especializada</td></tr><tr><td>Serviço de Referência</td></tr><tr><td>Filosofia e Ética</td></tr><tr><td>Planej. Bases de Dados</td></tr></tbody></table></div></div></div>
+    <div class="modal fade" id="modalUFSC" tabindex="-1" aria-hidden="true"><div class="modal-dialog modal-lg"><div class="modal-content"><div class="modal-header bg-lilac"><h5 class="modal-title fw-bold">UFSC - Santa Catarina</h5><button type="button" class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body"><p><strong>Implantado em:</strong> 1973</p><p>Currículo moderno com disciplinas de LGPD, Biblioterapia e Acessibilidade. Forte em gestão de processos.</p></div></div></div></div>
 
-                        <div class="accordion-item"><h2 class="accordion-header"><button class="accordion-button collapsed fw-bold text-purple" type="button" data-bs-toggle="collapse" data-bs-target="#ufrgs7">Etapa 7 e 8 (Final)</button></h2><div id="ufrgs7" class="accordion-collapse collapse" data-bs-parent="#accordionUFRGS"><div class="accordion-body p-0"><table class="table table-striped table-sm mb-0"><tbody><tr><td>Proj. de Extensão</td></tr><tr><td>Pesquisa em CI</td></tr><tr><td>Estágio Curricular</td></tr><tr><td>TCC</td></tr></tbody></table></div></div></div>
-                        
-                        <div class="accordion-item"><h2 class="accordion-header"><button class="accordion-button collapsed fw-bold bg-light text-dark" type="button" data-bs-toggle="collapse" data-bs-target="#ufrgsOpt">➕ Eletivas</button></h2><div id="ufrgsOpt" class="accordion-collapse collapse" data-bs-parent="#accordionUFRGS"><div class="accordion-body p-3 small">Libras, Alemão/Francês/Inglês Instrumental, Arquitetura da Info, Bibliometria, Bib. Escolares/Públicas, Curadoria Digital, etc.</div></div></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+    <div class="modal fade" id="modalUDESC" tabindex="-1" aria-hidden="true"><div class="modal-dialog modal-lg"><div class="modal-content"><div class="modal-header bg-lilac"><h5 class="modal-title fw-bold">UDESC - Santa Catarina</h5><button type="button" class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body"><p>Criado na década de 70 na FAED. Desde 2000 possui habilitação focada em <strong>Gestão da Informação</strong>, atendendo a arquivos e centros de documentação.</p></div></div></div></div>
 
-    <div class="modal fade" id="modalUFRJ" tabindex="-1" aria-hidden="true">
-        <div class="modal-dialog modal-xl modal-dialog-scrollable">
-            <div class="modal-content">
-                <div class="modal-header" style="background-color: #8E24AA; color: white;">
-                    <h5 class="modal-title">Grade - UFRJ (Currículo Novo)</h5>
-                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body bg-lilac">
-                    <div class="card card-custom mb-3 p-3 border-purple">
-                        <h6 class="text-purple fw-bold">🚀 Foco em Tecnologia e Gestão</h6>
-                        <p class="small mb-0">Organizado em Eixos Temáticos, com disciplinas de IA, Big Data e IoT.</p>
-                    </div>
-                    <div class="accordion" id="accordionUFRJ">
-                        <div class="accordion-item"><h2 class="accordion-header"><button class="accordion-button fw-bold text-purple" type="button" data-bs-toggle="collapse" data-bs-target="#ufrj1">Eixo 1: História e Epistemologia</button></h2><div id="ufrj1" class="accordion-collapse collapse show" data-bs-parent="#accordionUFRJ"><div class="accordion-body p-3 small">Ética, Fundamentos, História Social, Lógica, Metodologia.</div></div></div>
-                        <div class="accordion-item"><h2 class="accordion-header"><button class="accordion-button collapsed fw-bold text-purple" type="button" data-bs-toggle="collapse" data-bs-target="#ufrj2">Eixo 2: Sociedade e Cultura</button></h2><div id="ufrj2" class="accordion-collapse collapse" data-bs-parent="#accordionUFRJ"><div class="accordion-body p-3 small">Competência em Info, Comunicação Científica, Editoração, Mediação de Leitura, Recursos Informacionais.</div></div></div>
-                        <div class="accordion-item"><h2 class="accordion-header"><button class="accordion-button collapsed fw-bold text-purple" type="button" data-bs-toggle="collapse" data-bs-target="#ufrj3">Eixo 3: Organização</button></h2><div id="ufrj3" class="accordion-collapse collapse" data-bs-parent="#accordionUFRJ"><div class="accordion-body p-3 small">Indexação, Classificação, Normalização, Representação Descritiva, Recuperação da Info.</div></div></div>
-                        <div class="accordion-item"><h2 class="accordion-header"><button class="accordion-button collapsed fw-bold text-purple" type="button" data-bs-toggle="collapse" data-bs-target="#ufrj4">Eixo 4: Tecnologias (TICs)</button></h2><div id="ufrj4" class="accordion-collapse collapse" data-bs-parent="#accordionUFRJ"><div class="accordion-body p-3 small">Arquitetura da Info, Gestão de Dados, IA, Big Data, Repositórios Digitais.</div></div></div>
-                        <div class="accordion-item"><h2 class="accordion-header"><button class="accordion-button collapsed fw-bold text-purple" type="button" data-bs-toggle="collapse" data-bs-target="#ufrj5">Eixo 5: Gestão</button></h2><div id="ufrj5" class="accordion-collapse collapse" data-bs-parent="#accordionUFRJ"><div class="accordion-body p-3 small">Empreendedorismo, Gestão de Projetos, Marketing, Preservação, Recursos Humanos.</div></div></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+    <div class="modal fade" id="modalUnB" tabindex="-1" aria-hidden="true"><div class="modal-dialog modal-lg"><div class="modal-content"><div class="modal-header bg-lilac"><h5 class="modal-title fw-bold">UnB - Brasília</h5><button type="button" class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body"><p><strong>Fundação:</strong> 1962</p><p>Profissionais reconhecidos nacionalmente. Corpo docente altamente capacitado internacionalmente. Currículo em sintonia com acontecimentos políticos e sociais.</p></div></div></div></div>
 
-    <div class="modal fade" id="modalFURG" tabindex="-1" aria-hidden="true">
-        <div class="modal-dialog modal-xl modal-dialog-scrollable">
-            <div class="modal-content">
-                <div class="modal-header" style="background-color: #8E24AA; color: white;">
-                    <h5 class="modal-title">Grade - FURG</h5>
-                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body bg-lilac">
-                    <div class="card card-custom mb-3 p-3 border-purple">
-                        <h6 class="text-purple fw-bold">🌊 Diferencial: Extensão e Línguas</h6>
-                        <p class="small mb-0">Forte presença de Extensão Bibliotecária (I a IV) e disciplinas de línguas instrumentais.</p>
-                    </div>
-                    <div class="accordion" id="accordionFURG">
-                        <div class="accordion-item"><h2 class="accordion-header"><button class="accordion-button fw-bold text-purple" type="button" data-bs-toggle="collapse" data-bs-target="#furg1">Prática e Extensão</button></h2><div id="furg1" class="accordion-collapse collapse show" data-bs-parent="#accordionFURG"><div class="accordion-body p-0"><table class="table table-striped table-sm mb-0"><tbody><tr class="table-warning"><td><strong>Extensão Bibliotecária I a IV</strong></td></tr><tr><td>Estágio Obrigatório</td></tr><tr><td>TCC I e II</td></tr></tbody></table></div></div></div>
-                        <div class="accordion-item"><h2 class="accordion-header"><button class="accordion-button collapsed fw-bold text-purple" type="button" data-bs-toggle="collapse" data-bs-target="#furg2">Organização e Gestão</button></h2><div id="furg2" class="accordion-collapse collapse" data-bs-parent="#accordionFURG"><div class="accordion-body p-3 small">Rep. Descritiva, Classificação, Linguística, Bancos de Dados, Repositórios Digitais, Adm. de Bibliotecas.</div></div></div>
-                        <div class="accordion-item"><h2 class="accordion-header"><button class="accordion-button collapsed fw-bold text-purple" type="button" data-bs-toggle="collapse" data-bs-target="#furg3">Humanidades e Línguas</button></h2><div id="furg3" class="accordion-collapse collapse" data-bs-parent="#accordionFURG"><div class="accordion-body p-3 small">Ética, Psicologia Social, História da Arte, Sociologia, Libras, Inglês/Espanhol/Francês Instrumental.</div></div></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+    <div class="modal fade" id="modalUFG" tabindex="-1" aria-hidden="true"><div class="modal-dialog modal-lg"><div class="modal-content"><div class="modal-header bg-lilac"><h5 class="modal-title fw-bold">UFG - Goiás</h5><button type="button" class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body"><p>Forma profissionais para campos Social, Educacional e Cultural. Estruturada em 5 eixos (Administrativo, Técnico, Tecnológico, Fundamentos, Metodológico). Foco na mediação cultural.</p></div></div></div></div>
 
-    <div class="modal fade" id="modalUFAL" tabindex="-1" aria-hidden="true"><div class="modal-dialog"><div class="modal-content"><div class="modal-header"><h5 class="modal-title">Grade - UFAL</h5><button type="button" class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body"><ul><li>Fundamentos da Biblioteconomia</li><li>Métodos de Pesquisa</li><li>Representação Descritiva</li><li>Sociologia da Informação</li></ul></div></div></div></div>
+    <div class="modal fade" id="modalUFR" tabindex="-1" aria-hidden="true"><div class="modal-dialog modal-lg"><div class="modal-content"><div class="modal-header bg-lilac"><h5 class="modal-title fw-bold">UFR - Mato Grosso</h5><button type="button" class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body"><p>Criado em 1999 (antiga UFMT). Atende a demanda do Mato Grosso, formando para bibliotecas, arquivos e centros de documentação públicos e privados.</p></div></div></div></div>
 
-    <div class="modal fade" id="modalPUC" tabindex="-1" aria-hidden="true"><div class="modal-dialog"><div class="modal-content"><div class="modal-header"><h5 class="modal-title">Grade - PUC Campinas</h5><button type="button" class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body"><ul><li>Gestão da Informação</li><li>Arquitetura da Informação</li><li>Empreendedorismo</li><li>Laboratório de Práticas</li></ul></div></div></div></div>
+    <div class="modal fade" id="modalUFBA" tabindex="-1" aria-hidden="true"><div class="modal-dialog modal-lg"><div class="modal-content"><div class="modal-header bg-lilac"><h5 class="modal-title fw-bold">UFBA - Bahia</h5><button type="button" class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body"><p><strong>Destaque:</strong> Forte atuação em EaD (Educação a Distância) através do sistema UAB.</p><p>Prepara para gestão da informação, inteligência tecnológica e consultoria em diversos polos do estado.</p></div></div></div></div>
 
-    <div class="modal fade" id="modalUFSCar" tabindex="-1" aria-hidden="true"><div class="modal-dialog"><div class="modal-content"><div class="modal-header"><h5 class="modal-title">Grade - UFSCar</h5><button type="button" class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body"><ul><li>Recuperação da Informação</li><li>Política de Indexação</li><li>Estudos de Usuários</li><li>Gestão do Conhecimento</li></ul></div></div></div></div>
+    <div class="modal fade" id="modalUFPE" tabindex="-1" aria-hidden="true"><div class="modal-dialog modal-lg"><div class="modal-content"><div class="modal-header bg-lilac"><h5 class="modal-title fw-bold">UFPE - Pernambuco</h5><button type="button" class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body"><p>Prepara para preservar e gerenciar recursos em diversos suportes. Foco em novas frentes de trabalho: empresarial, industrial, consultoria e arquivos privados.</p></div></div></div></div>
 
-    <div class="modal fade" id="modalUNIRIO" tabindex="-1" aria-hidden="true"><div class="modal-dialog"><div class="modal-content"><div class="modal-header"><h5 class="modal-title">Grade - UNIRIO</h5><button type="button" class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body"><ul><li>Bibliografia e Referência</li><li>Paleografia</li><li>Preservação de Documentos</li><li>Informática Documentária</li></ul></div></div></div></div>
+    <div class="modal fade" id="modalUFC" tabindex="-1" aria-hidden="true"><div class="modal-dialog modal-lg"><div class="modal-content"><div class="modal-header bg-lilac"><h5 class="modal-title fw-bold">UFC - Ceará</h5><button type="button" class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body"><p>Além do presencial, possui forte braço em EaD. Grade presencial com <strong>foco pesado em TI</strong> (Infraestrutura, Banco de Dados, Ciência de Dados) desde o início.</p></div></div></div></div>
 
-    <div class="modal fade" id="modalUFG" tabindex="-1" aria-hidden="true"><div class="modal-dialog"><div class="modal-content"><div class="modal-header"><h5 class="modal-title">Grade - UFG</h5><button type="button" class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body"><ul><li>Fundamentos da CI</li><li>Recursos Informacionais</li><li>Serviços de Informação</li><li>Tecnologias Web</li></ul></div></div></div></div>
+    <div class="modal fade" id="modalUFCA" tabindex="-1" aria-hidden="true"><div class="modal-dialog modal-lg"><div class="modal-content"><div class="modal-header bg-lilac"><h5 class="modal-title fw-bold">UFCA - Cariri</h5><button type="button" class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body"><p>Foco no mercado crescente além das bibliotecas: organizações jurídicas, de saúde, bancos e veículos de comunicação. Ênfase em conservação e preservação.</p></div></div></div></div>
 
-    <div class="modal fade" id="modalUFC" tabindex="-1" aria-hidden="true"><div class="modal-dialog"><div class="modal-content"><div class="modal-header"><h5 class="modal-title">Grade - UFC</h5><button type="button" class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body"><ul><li>Introdução à Biblioteconomia</li><li>Catalogação e Classificação</li><li>Ação Cultural</li></ul></div></div></div></div>
+    <div class="modal fade" id="modalUFPB" tabindex="-1" aria-hidden="true"><div class="modal-dialog modal-lg"><div class="modal-content"><div class="modal-header bg-lilac"><h5 class="modal-title fw-bold">UFPB - Paraíba</h5><button type="button" class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body"><p>Formação crítica e eficiente. Destaque para os <strong>Laboratórios de Práticas Integradas</strong> (estágios continuados do 4º ao 7º período).</p></div></div></div></div>
 
-    <div class="modal fade" id="modalUFPB" tabindex="-1" aria-hidden="true"><div class="modal-dialog"><div class="modal-content"><div class="modal-header"><h5 class="modal-title">Grade - UFPB</h5><button type="button" class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body"><ul><li>Ética Profissional</li><li>Gestão de Unidades de Info.</li><li>Mediação da Informação</li><li>Arquivística Básica</li></ul></div></div></div></div>
+    <div class="modal fade" id="modalUFRN" tabindex="-1" aria-hidden="true"><div class="modal-dialog modal-lg"><div class="modal-content"><div class="modal-header bg-lilac"><h5 class="modal-title fw-bold">UFRN - Rio Grande do Norte</h5><button type="button" class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body"><p>Localizado no Centro de Ciências Sociais Aplicadas. Corpo docente qualificado (Mestres/Doutores). Grupos de pesquisa fortes em "Informação na Sociedade Contemporânea" e "Tecnologia e Gestão".</p></div></div></div></div>
 
-    <div class="modal fade" id="modalUFES" tabindex="-1" aria-hidden="true"><div class="modal-dialog"><div class="modal-content"><div class="modal-header"><h5 class="modal-title">Grade - UFES</h5><button type="button" class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body"><ul><li>Teoria da Informação</li><li>Lógica e Expressão</li><li>Organização de Acervos</li><li>Sistemas de Informação</li></ul></div></div></div></div>
+    <div class="modal fade" id="modalUFAL" tabindex="-1" aria-hidden="true"><div class="modal-dialog modal-lg"><div class="modal-content"><div class="modal-header bg-lilac"><h5 class="modal-title fw-bold">UFAL - Alagoas</h5><button type="button" class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body"><p>Implantado em 1998. Objetiva formar profissionais dinâmicos para planejamento e gestão em diferentes espaços sociais. Destaque para os Projetos Integradores (ACE) na grade.</p></div></div></div></div>
+
+    <div class="modal fade" id="modalUFS" tabindex="-1" aria-hidden="true"><div class="modal-dialog modal-lg"><div class="modal-content"><div class="modal-header bg-lilac"><h5 class="modal-title fw-bold">UFS - Sergipe</h5><button type="button" class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body"><p>Foco no gerenciamento de Bibliotecas e Centros de Documentação, assessoria em redes e sistemas de informação, com postura crítica sobre desenvolvimento humano e social.</p></div></div></div></div>
+
+    <div class="modal fade" id="modalUESPI" tabindex="-1" aria-hidden="true"><div class="modal-dialog modal-lg"><div class="modal-content"><div class="modal-header bg-lilac"><h5 class="modal-title fw-bold">UESPI - Piauí</h5><button type="button" class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body"><p>Institucionalizado em 2002. Temas atuais: Tecnologias Digitais, Gestão Contemporânea, Educação para informação e Relações étnico-raciais. Articulação forte entre ensino, pesquisa e extensão.</p></div></div></div></div>
+
+    <div class="modal fade" id="modalUFAM" tabindex="-1" aria-hidden="true"><div class="modal-dialog modal-lg"><div class="modal-content"><div class="modal-header bg-lilac"><h5 class="modal-title fw-bold">UFAM - Amazonas</h5><button type="button" class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body"><p><strong>Criado em:</strong> 1966</p><p>Um dos cursos mais tradicionais da região Norte. Histórico ligado a Letras e Comunicação. Formação sólida baseada em estruturas curriculares constantemente atualizadas.</p></div></div></div></div>
+
+    <div class="modal fade" id="modalUFPA" tabindex="-1" aria-hidden="true"><div class="modal-dialog modal-lg"><div class="modal-content"><div class="modal-header bg-lilac"><h5 class="modal-title fw-bold">UFPA - Pará</h5><button type="button" class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body"><p>Instituído em 1963. Prepara para o "mercado da informação". Ênfase na organização, disseminação e recuperação de conteúdos. Atuação ampla em bancos, editoras, institutos de pesquisa e centros culturais.</p></div></div></div></div>
+
+    <div class="modal fade" id="modalUNIR" tabindex="-1" aria-hidden="true"><div class="modal-dialog modal-lg"><div class="modal-content"><div class="modal-header bg-lilac"><h5 class="modal-title fw-bold">UNIR - Rondônia</h5><button type="button" class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body"><p>Visa formar indivíduos reflexivos com ética e criatividade. Desenvolve competências humanas, tecnológicas e políticas, considerando as características locais e regionais.</p></div></div></div></div>
 
     <div class="modal fade" id="modalTecnicoIFRJ" tabindex="-1" aria-hidden="true"><div class="modal-dialog"><div class="modal-content"><div class="modal-header"><h5 class="modal-title">Grade - Técnico IFRJ</h5><button type="button" class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body"><ul><li>Atendimento ao Usuário</li><li>Conservação Preventiva</li><li>Informática Básica</li><li>Noções de Catalogação</li></ul></div></div></div></div>
     <div class="modal fade" id="modalTecnicoETEC" tabindex="-1" aria-hidden="true"><div class="modal-dialog"><div class="modal-content"><div class="modal-header"><h5 class="modal-title">Grade - Técnico ETEC</h5><button type="button" class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body"><ul><li>Organização de Acervos</li><li>Auxílio em Pesquisa</li><li>Rotinas Administrativas</li></ul></div></div></div></div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Script simples de busca na tabela
+        document.getElementById("myInput").addEventListener("keyup", function() {
+            var value = this.value.toLowerCase();
+            var rows = document.querySelectorAll("#universityTable tr");
+            rows.forEach(function(row) {
+                row.style.display = row.textContent.toLowerCase().indexOf(value) > -1 ? "" : "none";
+            });
+        });
+    </script>
 </body>
 </html>
