@@ -204,3 +204,11 @@ h1, h2, h3, .navbar-brand {
     margin-bottom: 8px;
     color: #555;
 }
+/* Destaque para tabela EaD */
+#ead .table thead {
+    background-color: #6A1B9A; /* Roxo mais escuro */
+    color: white;
+}
+#ead .btn-outline-purple {
+    border-radius: 50px; /* Botões redondinhos */
+}
