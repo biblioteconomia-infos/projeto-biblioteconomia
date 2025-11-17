@@ -63,40 +63,51 @@
         </div>
     </section>
 
-    <section id="tecnico" class="bg-lilac py-5">
+<section id="tecnico" class="bg-lilac py-5">
         <div class="container">
-            <h2 class="titulo-secao text-center mb-4">Curso Técnico</h2>
+            <h2 class="titulo-secao text-center mb-4">Curso Técnico (Nível Médio)</h2>
             
-            <div class="card card-custom mb-5 p-4">
-                <h3 class="text-purple mb-3">Qual a diferença para a Graduação?</h3>
-                <p>Enquanto o <strong>Bibliotecário (nível superior)</strong> foca na gestão, planejamento e coordenação, o <strong>Técnico</strong> atua na parte operacional: atendimento ao usuário, catalogação básica, conservação de acervo e apoio administrativo. É uma formação mais rápida e prática!</p>
+            <div class="card card-custom mb-5 p-4 border-purple">
+                <div class="row align-items-center">
+                    <div class="col-md-8">
+                        <h3 class="text-purple mb-2">Onde estudar de graça?</h3>
+                        <p class="mb-0">
+                            A oferta pública do curso <strong>Técnico</strong> é rara no Brasil. Atualmente, apenas o <strong>IFRS (Federal)</strong> e a <strong>ETEC (Estadual-SP)</strong> mantêm turmas regulares e gratuitas.
+                        </p>
+                    </div>
+                    <div class="col-md-4 text-end">
+                        <span class="badge bg-warning text-dark">Raridade!</span>
+                    </div>
+                </div>
             </div>
 
-            <h4 class="text-center text-purple mb-3">Onde fazer o Técnico?</h4>
             <div class="table-responsive">
-                <table class="table table-hover table-custom">
+                <table class="table table-hover table-custom align-middle">
                     <thead>
                         <tr>
                             <th>Instituição</th>
+                            <th>Tipo</th>
                             <th>Local</th>
                             <th>Detalhes</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
-                            <td>IFRJ (Instituto Federal)</td>
-                            <td>Rio de Janeiro</td>
+                            <td><strong>IFRS</strong> (Inst. Federal do Rio Grande do Sul)</td>
+                            <td><span class="badge bg-success">Federal</span></td>
+                            <td>Porto Alegre - RS</td>
                             <td>
-                                <a href="https://portal.ifrj.edu.br/" target="_blank" class="btn btn-sm btn-outline-purple">Site</a>
-                                <button class="btn btn-sm btn-purple" data-bs-toggle="modal" data-bs-target="#modalTecnicoIFRJ">Grade Curricular</button>
+                                <a href="https://ifrs.edu.br/poa/" target="_blank" class="btn btn-sm btn-outline-purple">Site</a>
+                                <button class="btn btn-sm btn-purple" data-bs-toggle="modal" data-bs-target="#modalTecnicoIFRS">Ver Grade</button>
                             </td>
                         </tr>
                         <tr>
-                            <td>ETEC Parque da Juventude</td>
-                            <td>São Paulo</td>
+                            <td><strong>ETEC</strong> Parque da Juventude</td>
+                            <td><span class="badge bg-primary">Estadual</span></td>
+                            <td>São Paulo - SP</td>
                             <td>
                                 <a href="https://www.etecparquedajuventude.com.br/" target="_blank" class="btn btn-sm btn-outline-purple">Site</a>
-                                <button class="btn btn-sm btn-purple" data-bs-toggle="modal" data-bs-target="#modalTecnicoETEC">Grade Curricular</button>
+                                <button class="btn btn-sm btn-purple" data-bs-toggle="modal" data-bs-target="#modalTecnicoETEC">Ver Grade</button>
                             </td>
                         </tr>
                     </tbody>
@@ -505,9 +516,51 @@
     <div class="modal fade" id="modalUDESC" tabindex="-1" aria-hidden="true"><div class="modal-dialog"><div class="modal-content"><div class="modal-header bg-lilac"><h5 class="modal-title fw-bold">UDESC - Santa Catarina</h5><button type="button" class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body"><p>Criado na década de 70. Desde 2000 possui habilitação focada em <strong>Gestão da Informação</strong>, atendendo a arquivos e centros de documentação.</p></div></div></div></div>
     
     <div class="modal fade" id="modalUFF" tabindex="-1" aria-hidden="true"><div class="modal-dialog"><div class="modal-content"><div class="modal-header bg-lilac"><h5 class="modal-title fw-bold">UFF - Niterói</h5><button type="button" class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body"><p>Foca na inovação e soluções para demandas de informação. Forte em tratamento da informação, tecnologias e pesquisa sobre comportamento do usuário.</p></div></div></div></div>
+    <div class="modal fade" id="modalTecnicoIFRS" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header bg-lilac">
+                    <h5 class="modal-title fw-bold">Técnico - IFRS (Porto Alegre)</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <p><strong>Duração:</strong> 3 Semestres (1 ano e meio)</p>
+                    <p>O único curso técnico regular na rede federal atualmente. Focado na prática auxiliar.</p>
+                    <h6 class="fw-bold text-purple">Principais Disciplinas:</h6>
+                    <ul>
+                        <li>Introdução à Biblioteconomia</li>
+                        <li>Organização de Acervos</li>
+                        <li>Atendimento ao Usuário</li>
+                        <li>Conservação e Reparos</li>
+                        <li>Automação de Bibliotecas</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
 
-    <div class="modal fade" id="modalTecnicoIFRJ" tabindex="-1" aria-hidden="true"><div class="modal-dialog"><div class="modal-content"><div class="modal-header"><h5 class="modal-title">Grade - Técnico IFRJ</h5><button type="button" class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body"><ul><li>Atendimento ao Usuário</li><li>Conservação Preventiva</li><li>Informática Básica</li><li>Noções de Catalogação</li></ul></div></div></div></div>
-    <div class="modal fade" id="modalTecnicoETEC" tabindex="-1" aria-hidden="true"><div class="modal-dialog"><div class="modal-content"><div class="modal-header"><h5 class="modal-title">Grade - Técnico ETEC</h5><button type="button" class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body"><ul><li>Organização de Acervos</li><li>Auxílio em Pesquisa</li><li>Rotinas Administrativas</li></ul></div></div></div></div>
+    <div class="modal fade" id="modalTecnicoETEC" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header bg-lilac">
+                    <h5 class="modal-title fw-bold">Técnico - ETEC (São Paulo)</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <p><strong>Ingresso:</strong> Vestibulinho</p>
+                    <p>Referência em SP. Forma profissionais para atuar em bibliotecas, centros de documentação e arquivos.</p>
+                    <h6 class="fw-bold text-purple">O que você aprende:</h6>
+                    <ul>
+                        <li>Auxiliar no Tratamento da Informação</li>
+                        <li>Atividades de Disseminação da Informação</li>
+                        <li>Rotinas Administrativas em Bibliotecas</li>
+                        <li>Ações Educativas e Culturais</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script>
         // Script simples de busca na tabela
