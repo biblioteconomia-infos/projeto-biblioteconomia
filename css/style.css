@@ -176,3 +176,31 @@ h1, h2, h3, .navbar-brand {
     box-shadow: 0 0 0 0.25rem rgba(142, 36, 170, 0.25);
     border-color: #8E24AA;
 }
+/* Estilos da Seção Áreas de Atuação */
+.card-atuacao {
+    border: 2px solid #F3E5F5;
+    transition: all 0.3s ease;
+    background: white;
+    border-radius: 20px;
+}
+
+.card-atuacao:hover {
+    transform: translateY(-10px); /* O card "flutua" quando passa o mouse */
+    border-color: #8E24AA;
+    box-shadow: 0 10px 25px rgba(142, 36, 170, 0.2);
+}
+
+.icon-box {
+    font-size: 3rem; /* Tamanho do emoji */
+    background-color: #F8F1FA;
+    width: 80px;
+    height: 80px;
+    line-height: 80px;
+    border-radius: 50%;
+    margin: 0 auto; /* Centraliza */
+}
+
+.card-atuacao ul li {
+    margin-bottom: 8px;
+    color: #555;
+}
